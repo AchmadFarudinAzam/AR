@@ -1,0 +1,131 @@
+/* Global Styles */
+nav ul {
+    list-style: none; /* Hilangkan bullet */
+    display: flex; /* Gunakan flexbox */
+    justify-content: flex; /* Menu rata kanan */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px; /* Jarak antar item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background: #fff;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Model Viewer Styling */
+model-viewer {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.card-container {
+    display: flex; /* Menampilkan card dalam baris */
+    gap: 16px; /* Memberikan jarak antar card */
+    justify-content: center; /* Mengatur card agar berada di tengah */
+}
+
+.card {
+    flex: 1; /* Membuat card fleksibel */
+    max-width: 300px; /* Membatasi lebar card */
+    display: flex;
+    flex-direction: column; /* Mengatur elemen di dalam card secara vertikal */
+    align-items: center; /* Menjaga teks di tengah */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Menyamakan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+    border-radius: 8px;
+    margin-bottom: 16px; /* Jarak antara gambar dan teks */
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0;
+    min-height: 24px; /* Menjamin teks judul selalu sejajar */
+}
+
+.card a {
+    margin-top: auto; /* Memastikan tombol berada di bagian bawah */
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}

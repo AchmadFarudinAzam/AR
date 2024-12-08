@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a-scene embedded>
+        <a-assets>
+            <!-- Tambahkan model 3D di sini -->
+            <a-asset-item id="rak-model" src="assets/model/rak.glb"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#rak-model" position="0 0 -5" scale="0.5 0.5 0.5" rotation="0 180 0"></a-entity>
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+
+</html>
